@@ -16,12 +16,16 @@ Appendices are part of the CPAS v1.0 specification.
 ## Structure
 
 The appendices are organized as follows:
+
+```text
 APPENDICES/
 ├── VISUAL_EXPECTATIONS.md
 ├── VISUAL_HAZARDS.md
 └── IMAGES/
-├── NORMATIVE/
-└── EXAMPLES/
+    ├── NORMATIVE/
+    └── EXAMPLES/
+```
+
 
 Each component serves a distinct role.
 
