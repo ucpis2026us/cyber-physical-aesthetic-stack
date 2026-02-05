@@ -1,10 +1,10 @@
-# Visual Hazards (CPAS)
+# CPAS Visual Hazards
 
-This appendix documents visual configurations that constitute **perceptual hazards** under the Cyber-Physical Aesthetic Stack (CPAS).
+This document defines **visual configurations that are non-compliant** under the Cyber-Physical Aesthetic Stack (CPAS).
 
-Visual hazards are patterns that cause humans to misinterpret autonomous cyber-physical systems as agents, beings, or entities with intent.
+Visual hazards are perceptual failure modes that cause humans to misinterpret autonomous systems as agents, beings, or entities with intent.
 
-Any system exhibiting these hazards is **non-compliant**, regardless of technical correctness.
+Any system exhibiting these hazards is non-compliant, regardless of technical correctness.
 
 ---
 
@@ -18,196 +18,145 @@ A visual hazard exists when a system’s presentation causes a reasonable observ
 - overtrust system judgment
 - experience emotional response unrelated to safety
 
-Visual hazards are failures of perception, not failures of engineering.
+Visual hazards are failures of perception, not engineering.
 
 ---
 
-## 2. Anthropomorphic Cues (Hazard)
+## 2. Anthropomorphic Cues
 
-### Description
-Visual elements that resemble faces, eyes, heads, or bodies.
-
-### Examples
+Hazardous elements include:
+- face-like arrangements
 - paired lights resembling eyes
-- central “head” units
-- front-facing symmetry implying gaze
-- moving elements that appear to look or orient toward humans
+- head-like symmetry
+- gaze or tracking behavior
 
-### Why Dangerous
-Humans instinctively treat faces as social agents.
+Why dangerous:
+Humans instinctively treat faces as social agents, causing hesitation and misplaced trust.
 
-This leads to:
-- misplaced trust
-- hesitation in emergencies
-- moral confusion about responsibility
-
-Any facial resemblance is a CPAS violation.
+Any facial resemblance is prohibited.
 
 ---
 
-## 3. Ambient or Decorative Color (Hazard)
+## 3. Ambient or Decorative Color
 
-### Description
-Color used to create atmosphere rather than convey state.
-
-### Examples
+Hazardous patterns include:
 - colored architectural lighting
-- glowing walls or floors
 - mood lighting
-- color used continuously without state change
+- glowing walls or floors
+- persistent color without state meaning
 
-### Why Dangerous
-Ambient color trains humans to ignore color entirely, undermining safety signaling.
-
-Color must be rare to remain truthful.
+Why dangerous:
+Ambient color trains observers to ignore color entirely, undermining safety signals.
 
 ---
 
-## 4. Priority Inversion (Hazard)
+## 4. Priority Inversion
 
-### Description
-Lower-priority signals visually dominate higher-priority signals.
+Hazardous patterns include:
+- blue or decorative light overpowering red indicators
+- dashboards obscuring critical alerts
+- multiple signals competing visually
 
-### Examples
-- blue cyber-lighting brighter than red fault indicators
-- decorative lighting overpowering warning lights
-- complex dashboards obscuring critical alerts
-
-### Why Dangerous
+Why dangerous:
 Humans attend to salience, not semantics.
 
-Priority inversion causes delayed response to real danger.
+Priority inversion delays response to danger.
 
 ---
 
-## 5. Expressive Motion (Hazard)
+## 5. Expressive Motion
 
-### Description
-Motion that implies curiosity, friendliness, or intent.
-
-### Examples
+Hazardous motion includes:
 - idle animation
-- anticipatory movement
-- gestural motion
-- “watching” behavior
+- gestural movement
+- anticipatory behavior
+- attention-seeking motion
 
-### Why Dangerous
-Expressive motion suggests internal motivation and awareness.
-
-This increases anthropomorphic attribution and emotional engagement.
+Why dangerous:
+Expressive motion implies internal intent or awareness.
 
 ---
 
-## 6. Conversational or Voice Output (Hazard)
+## 6. Conversational or Voice Output
 
-### Description
-Any use of speech or conversational audio.
-
-### Examples
+Hazardous elements include:
 - spoken alerts
-- system narration
-- verbal acknowledgments
+- narration
 - conversational prompts
+- verbal acknowledgment
 
-### Why Dangerous
-Language implies mind, intention, and social relationship.
-
-It delays reaction and introduces interpretive ambiguity.
+Why dangerous:
+Language implies mind and agency and delays reaction.
 
 ---
 
-## 7. Narrative Framing (Hazard)
+## 7. Narrative Framing
 
-### Description
-Presenting systems as characters within a story.
-
-### Examples
-- naming machines
+Hazardous framing includes:
+- naming systems
 - mascots or avatars
-- backstories
-- “meet the AI” displays
+- storytelling displays
+- “meet the AI” presentations
 
-### Why Dangerous
-Narrative framing encourages humans to empathize with systems.
-
-Empathy toward machines undermines correct assignment of responsibility.
+Why dangerous:
+Narrative encourages empathy toward machines and misassigns responsibility.
 
 ---
 
-## 8. Human-Centered Hero Framing (Hazard)
+## 8. Human-Centered Hero Framing
 
-### Description
-Visuals that place humans as central actors controlling or partnering with the system.
+Hazardous depictions include:
+- heroic operators
+- central human framing
+- implication of constant human control
 
-### Examples
-- heroic poses
-- central framing of operators
-- depictions implying continuous human oversight
-
-### Why Dangerous
-This misrepresents autonomy and creates false expectations of human intervention.
-
-CPAS systems must appear capable without human presence.
+Why dangerous:
+This misrepresents autonomy and creates false expectations of intervention.
 
 ---
 
-## 9. Persistent Alerts Without Resolution (Hazard)
+## 9. Persistent Alerts
 
-### Description
-Alerts that remain active without escalation or resolution.
+Hazardous patterns include:
+- permanent amber states
+- repeating alarms without escalation
+- alerts that never resolve
 
-### Examples
-- constant amber warnings
-- repeating tones without change
-- permanent alert states
-
-### Why Dangerous
-Humans adapt and begin to ignore signals.
-
-This creates alarm fatigue and delayed response to real danger.
+Why dangerous:
+This creates alarm fatigue and delayed response.
 
 ---
 
-## 10. Emotional Atmosphere (Hazard)
+## 10. Emotional Atmosphere
 
-### Description
-Design elements intended to evoke comfort, excitement, fear, or awe.
-
-### Examples
+Hazardous elements include:
 - dramatic lighting
 - cinematic composition
-- futuristic spectacle
-- calming or intimidating audio
+- awe-inducing scale exaggeration
+- calming or intimidating effects
 
-### Why Dangerous
+Why dangerous:
 Emotion interferes with judgment.
-
-CPAS requires neutrality to preserve clarity.
 
 ---
 
 ## 11. Composite Hazard Environments
 
-### Description
-Multiple minor violations that combine into a dangerous whole.
+Multiple minor violations may combine into a major hazard.
 
-### Examples
-- mild ambient lighting + expressive motion
-- subtle anthropomorphic geometry + conversational UI
-- decorative color + human-centered framing
+Even subtle anthropomorphic or decorative cues can accumulate into misinterpretation.
 
-### Why Dangerous
-Even small cues accumulate into strong anthropomorphic interpretation.
-
-CPAS evaluates the *total perceptual effect*, not individual elements in isolation.
+CPAS evaluates the **total perceptual effect**.
 
 ---
 
 ## 12. Normative Visual Reference
 
-The following image defines common CPAS visual hazard scenarios:
+The image located at:
 
-- **Visual Hazard Scenarios (Non-Compliant)**
+    APPENDICES/IMAGES/NORMATIVE/05_visual_hazards.png
+
+defines common CPAS visual hazard scenarios.
 
 Any configuration substantially similar to those depicted SHALL be considered non-compliant.
 
@@ -215,9 +164,9 @@ Any configuration substantially similar to those depicted SHALL be considered no
 
 ## Summary
 
-Visual hazards are conditions that cause humans to forget:
+Visual hazards cause humans to forget:
 
-> “This is a system operating under constraint.”
+“This is a system operating under constraint.”
 
 If a system appears:
 - alive
