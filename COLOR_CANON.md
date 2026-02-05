@@ -1,114 +1,120 @@
 # CPAS Color Canon
 
-This document defines the normative color semantics for the Cyber-Physical Aesthetic Stack (CPAS).
+This document defines the **normative color semantics** for the Cyber-Physical Aesthetic Stack (CPAS).
 
-Color in CPAS is not aesthetic.  
-It is a signaling mechanism used to communicate system state, priority, and safety.
+Within CPAS, color is not aesthetic.  
+Color is a **safety-critical signaling system**.
 
-Any use of color that does not encode operational meaning is non-compliant.
+Any use of color that does not convey operational meaning constitutes non-compliance.
 
 ---
 
 ## 1. Core Rule
 
-Color SHALL be used only to communicate system state, priority, or safety-relevant information.
+Color SHALL be used only to communicate:
+
+- system state
+- safety condition
+- operational priority
 
 Color SHALL NOT be used for:
 - decoration
 - branding
 - ambience
-- emotional framing
+- emotional effect
 - stylistic differentiation
 
-If color does not change interpretation, it SHALL NOT exist.
+If removing a color does not change interpretation, that color is prohibited.
 
 ---
 
-## 2. Structural Neutrals (Default)
+## 2. Structural Neutrals (Default State)
 
-Structural neutrals comprise the majority of the visual field in CPAS-compliant systems.
+Structural neutrals SHALL dominate the visual field.
 
-### Allowed Neutral Colors
-- graphite
+These colors communicate mass, constraint, and infrastructure.
+
+### Permitted Neutral Classes
 - industrial gray
-- brushed metal
-- matte black (limited use)
+- graphite
+- brushed or matte metal
 - neutral white (illumination only)
+- limited matte black (non-dominant)
 
-### Purpose
-- communicate mass and constraint
-- minimize perceptual noise
-- provide contrast for signal colors
-
-Structural neutrals SHOULD occupy approximately 85–95% of visible surfaces.
+Structural neutrals SHOULD occupy approximately **85–95%** of visible surfaces.
 
 ---
 
 ## 3. State Colors (Health and Safety)
 
-State colors communicate system health and safety status.  
+State colors communicate **system condition**.
+
 They are mutually exclusive and SHALL NOT overlap.
 
+---
+
 ### Green — Nominal / Operational
+
 Indicates:
 - normal operation
-- safe, expected behavior
-- no action required
+- safe condition
+- no human action required
 
-Green SHALL NOT be persistent if operation is not active.
+Green SHALL NOT be persistent if the system is idle.
 
 ---
 
 ### Amber — Degraded / Warning
-Indicates:
-- degraded performance
-- abnormal condition
-- attention required, but not immediate danger
 
-Amber SHALL escalate or resolve.  
+Indicates:
+- abnormal condition
+- degraded performance
+- attention required
+
+Amber SHALL resolve or escalate.  
 Persistent amber states are prohibited.
 
 ---
 
 ### Red — Fault / Unsafe
+
 Indicates:
 - critical fault
 - unsafe condition
 - immediate action required
-- system halted or entering safe state
 
-Red SHALL override all other colors in visibility and priority.
+Red SHALL override all other colors in visibility and salience.
 
 ---
 
 ## 4. Cyber-Presence Color
 
-### Cyan / Blue — Computation / Control Presence
+### Cyan / Blue — Computation Presence
 
 Cyan or blue MAY be used to indicate:
-- active computation
 - control plane availability
-- network or cyber-layer presence
+- cyber-layer activity
+- network presence
 
-### Constraints
-- Blue SHALL NOT indicate health or safety state
+Constraints:
+- Blue SHALL NOT indicate safety or health
 - Blue SHALL NOT compete with green, amber, or red
-- Blue SHALL be lower in brightness and salience than state colors
-- Blue SHALL NOT be ambient or architectural
+- Blue SHALL be lower in brightness and salience
+- Blue SHALL NOT be architectural or ambient
 
-Blue answers the question:
-> “Is the system present?”
+Blue answers:
+- “Is the system present?”
 
-It does not answer:
-> “Is the system safe?”
+Blue does NOT answer:
+- “Is the system safe?”
 
 ---
 
 ## 5. Signal Hierarchy (Mandatory)
 
-Color priority SHALL be enforced as follows:
+Color priority SHALL be enforced in the following order:
 
-1. Red — highest priority
+1. Red
 2. Amber
 3. Green
 4. Cyan / Blue
@@ -124,21 +130,21 @@ Priority inversion constitutes non-compliance.
 
 Color SHALL be spatially constrained.
 
-### Allowed Locations
+Permitted locations:
 - indicator lights
 - control panels
 - dashboards
 - beacons
 - safety markings
 
-### Prohibited Locations
+Prohibited locations:
 - walls
 - floors
 - ceilings
 - structural elements
 - ambient lighting
 
-Color bleed into architectural surfaces is prohibited.
+Color bleed into architecture is prohibited.
 
 ---
 
@@ -146,46 +152,49 @@ Color bleed into architectural surfaces is prohibited.
 
 Color SHALL be temporally meaningful.
 
-### Requirements
-- State colors SHALL appear only when the corresponding state exists
-- Transitions SHALL be clear and deterministic
-- No color SHALL remain active without justification
+Requirements:
+- colors appear only while the state exists
+- transitions are deterministic and legible
+- no color remains active without justification
 
 Color that becomes background noise is non-compliant.
 
 ---
 
-## 8. Motion and Animation Constraints
+## 8. Animation and Motion
 
-Color animation is permitted only when:
-- a state transition occurs
-- escalation or de-escalation is occurring
+Color animation is permitted only for:
+- state transition
+- escalation or de-escalation
 
-Pulsing, cycling, or decorative animation is prohibited.
+Decorative pulsing, cycling, or motion is prohibited.
 
 ---
 
 ## 9. Normative Visual References
 
-The following images are normative references defining CPAS color usage:
+The following images located in:
 
-1. State-Transition Strip (Temporal Use)
-2. Spatial Zoning Diagram (Architectural Use)
-3. Signal Hierarchy Stack (Priority & Salience)
-4. Compliant vs Non-Compliant Comparison
-5. Visual Hazard Scenarios (Non-Compliant)
+    APPENDICES/IMAGES/NORMATIVE/
 
-These images define acceptable bounds of interpretation.
+are **normative references** for this document:
+
+- 01_state_color_transitions.png
+- 02_color_reference.png
+- 03_spatial_zoning.png
+- 04_signal_hierarchy.png
+
+Any configuration substantially similar to those images SHALL be considered compliant or non-compliant accordingly.
 
 ---
 
 ## Summary
 
-CPAS color usage enforces a single outcome:
+CPAS color usage ensures:
 
 - state is immediately legible
 - priority is unambiguous
-- safety signals dominate perception
+- safety dominates perception
 - decoration is eliminated
 
 If color attracts attention without conveying truth, CPAS has been violated.
